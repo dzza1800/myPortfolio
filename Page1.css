@@ -1,0 +1,127 @@
+h1{
+    
+    text-align: center;
+    font-size: 45px;
+    padding: 2px;
+    z-index: 1000;
+    color: snow;
+    background-color: black;
+    text-shadow: 1px 1px gold;
+
+
+    font-family: monospace;
+}
+p{
+    color:snow;
+    font-family: cursive;
+    font-size: 20px;
+    text-shadow: 2px 2px black;
+    animation-name: appearingParagraphs;
+    animation-duration: 3s;
+}
+h3{
+    text-align: center;
+    padding: 1px;
+    color: snow;
+    font-family: cursive;
+    text-shadow: 2px 2px black;
+}
+a{
+    text-decoration: none;
+    color: white;
+    z-index: 1000;
+    position: absolute;
+    font-family: cursive;
+
+}
+a:hover
+{
+    font-size: 20px;
+    color: red;
+    background-color: transparent;
+    transition: 0.4s;
+}
+a:active{
+    transform:translateY(10px);
+    transition: 0.4s;
+}
+body{
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    animation-name: appearingParagraphs;
+    animation-duration: 2s;
+
+}
+
+ul{
+    text-decoration: none;
+    list-style: none;
+}
+li{
+
+    display: inline;
+    color: white;
+    padding: 170px;
+}
+.newContainer{
+   
+    text-align: center;
+    padding: 3px;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 1;
+
+}
+table{
+    
+    color: snow;
+    border-style: dotted;
+    border-color: snow;
+
+    padding: 20px;
+    display:flex;
+    width: 30%;
+    align-content: center;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+h4{
+    color: snow;
+}
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    animation-name: transformImage;
+    animation-duration: 3s;
+}
+img{
+        border-radius: 15px;
+}
+.linkContainer{
+    display: flex;
+    justify-content: center;
+}
+.bodyContainer{
+    z-index: -1;
+    background-color: gray;
+    border-radius: 15px;
+    opacity: 0.6;
+    width: 70%;
+    height: 84%;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+@keyframes transformImage{
+    from {transform: scale(0);}
+    to{transform:scale(1);}
+}
+@keyframes appearingParagraphs{
+    from{opacity: 0;}
+    to{opacity:1;}
+}
